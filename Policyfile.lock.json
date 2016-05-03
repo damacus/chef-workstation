@@ -1,25 +1,26 @@
 {
-  "revision_id": "0f377bbb9a6bd7caa7416e019a2af3fd6361746980baa1cf60bee49c93666dd2",
+  "revision_id": "f730f35d0f15711d0d063c545175a9a82a5d9e92718641f0d7a364b00af5c80f",
   "name": "workstation",
   "run_list": [
     "recipe[workstation::default]"
   ],
   "cookbook_locks": {
     "workstation": {
-      "version": "0.2.1",
-      "identifier": "9205702ecef83576d462de9888260b886cbbd36b",
-      "dotted_decimal_identifier": "41101325979547701.33447568358279206.12680567706475",
+      "version": "0.2.2",
+      "identifier": "38ad63e11342f054217172c09d9101255f98bee4",
+      "dotted_decimal_identifier": "15953243185300208.23680669183942033.1260029263588",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
-        "remote": "git@github.com:willejs/chef-workstation.git",
-        "revision": "7f5b45b7459638482bec87f557435e9f4f040eb2",
+        "remote": "git@github.com:damacus/chef-workstation.git",
+        "revision": "c005522dfb0e836ef424ad7b1e8842bc33d0e883",
         "working_tree_clean": false,
         "published": true,
         "synchronized_remote_branches": [
           "origin/HEAD -> origin/master",
-          "origin/master"
+          "origin/master",
+          "upstream/master"
         ]
       },
       "source_options": {
@@ -37,48 +38,37 @@
         "version": "2.0.5"
       }
     },
-    "mac_os_x": {
-      "version": "1.4.6",
-      "identifier": "b03f43d2291ec389a920bd1e6783738de9d11621",
-      "dotted_decimal_identifier": "49609156422344387.38748029886293891.127053350376993",
-      "cache_key": "mac_os_x-1.4.6-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/mac_os_x/versions/1.4.6/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/mac_os_x/versions/1.4.6/download",
-        "version": "1.4.6"
-      }
-    },
     "build-essential": {
-      "version": "2.3.1",
-      "identifier": "877c80bb7579e0e15ae81e305021b68e92f30a3b",
-      "dotted_decimal_identifier": "38136014198634976.63431822745292833.200723467012667",
-      "cache_key": "build-essential-2.3.1-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/build-essential/versions/2.3.1/download",
+      "version": "3.2.0",
+      "identifier": "324eb11258445ccebe8d46cb7fadab01931cc95b",
+      "dotted_decimal_identifier": "14160271259485276.58193359189802925.188023251454299",
+      "cache_key": "build-essential-3.2.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/build-essential/versions/3.2.0/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/build-essential/versions/2.3.1/download",
-        "version": "2.3.1"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/build-essential/versions/3.2.0/download",
+        "version": "3.2.0"
       }
     },
-    "7-zip": {
-      "version": "1.0.2",
-      "identifier": "dec0b1942996ee75b06097ba3f5e65d60e53a135",
-      "dotted_decimal_identifier": "62699313757263598.33126501184061278.111970037768501",
-      "cache_key": "7-zip-1.0.2-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/7-zip/versions/1.0.2/download",
+    "seven_zip": {
+      "version": "2.0.0",
+      "identifier": "8e6bde2b1a92690253e9c55d717870376718cf59",
+      "dotted_decimal_identifier": "40088048642986601.655213457142136.123383255191385",
+      "cache_key": "seven_zip-2.0.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/seven_zip/versions/2.0.0/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/7-zip/versions/1.0.2/download",
-        "version": "1.0.2"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/seven_zip/versions/2.0.0/download",
+        "version": "2.0.0"
       }
     },
     "windows": {
-      "version": "1.39.1",
-      "identifier": "0e98019b84499c168f6990c485c03a3dde825ec4",
-      "dotted_decimal_identifier": "4107782345476508.6350133050770880.64037400501956",
-      "cache_key": "windows-1.39.1-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/1.39.1/download",
+      "version": "1.40.0",
+      "identifier": "da3355dfbb6fd608d410329fe4bd8bdac88f1d91",
+      "dotted_decimal_identifier": "61417988841762774.2484965847590077.153771783953809",
+      "cache_key": "windows-1.40.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/1.40.0/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/1.39.1/download",
-        "version": "1.39.1"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/1.40.0/download",
+        "version": "1.40.0"
       }
     },
     "chef_handler": {
@@ -90,6 +80,39 @@
       "source_options": {
         "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/chef_handler/versions/1.3.0/download",
         "version": "1.3.0"
+      }
+    },
+    "mac_os_x": {
+      "version": "1.4.6",
+      "identifier": "b03f43d2291ec389a920bd1e6783738de9d11621",
+      "dotted_decimal_identifier": "49609156422344387.38748029886293891.127053350376993",
+      "cache_key": "mac_os_x-1.4.6-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/mac_os_x/versions/1.4.6/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/mac_os_x/versions/1.4.6/download",
+        "version": "1.4.6"
+      }
+    },
+    "atom": {
+      "version": "0.2.0",
+      "identifier": "e98faadb191297148659c843f2eeb29132a2e6c2",
+      "dotted_decimal_identifier": "65741633556648599.5777219704320750.196336689538754",
+      "cache_key": "atom-0.2.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/atom/versions/0.2.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/atom/versions/0.2.0/download",
+        "version": "0.2.0"
+      }
+    },
+    "apt": {
+      "version": "3.0.0",
+      "identifier": "ac1a47456c19b9b278abed0ac5e51b05d27f2082",
+      "dotted_decimal_identifier": "48442589403945401.50235225666143717.29711820333186",
+      "cache_key": "apt-3.0.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/apt/versions/3.0.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/apt/versions/3.0.0/download",
+        "version": "3.0.0"
       }
     }
   },
@@ -110,24 +133,32 @@
         "= 2.0.5"
       ],
       [
-        "mac_os_x",
-        "= 1.4.6"
-      ],
-      [
         "build-essential",
-        "= 2.3.1"
+        "= 3.2.0"
       ],
       [
-        "7-zip",
-        "= 1.0.2"
+        "seven_zip",
+        "= 2.0.0"
       ],
       [
         "windows",
-        "= 1.39.1"
+        "= 1.40.0"
       ],
       [
         "chef_handler",
         "= 1.3.0"
+      ],
+      [
+        "mac_os_x",
+        "= 1.4.6"
+      ],
+      [
+        "atom",
+        "= 0.2.0"
+      ],
+      [
+        "apt",
+        "= 3.0.0"
       ]
     ],
     "dependencies": {
@@ -137,22 +168,19 @@
           ">= 2.1.2"
         ]
       ],
-      "mac_os_x (1.4.6)": [
-
-      ],
-      "build-essential (2.3.1)": [
+      "build-essential (3.2.0)": [
         [
-          "7-zip",
+          "seven_zip",
           ">= 0.0.0"
         ]
       ],
-      "7-zip (1.0.2)": [
+      "seven_zip (2.0.0)": [
         [
           "windows",
           ">= 1.2.2"
         ]
       ],
-      "windows (1.39.1)": [
+      "windows (1.40.0)": [
         [
           "chef_handler",
           ">= 0.0.0"
@@ -161,7 +189,23 @@
       "chef_handler (1.3.0)": [
 
       ],
-      "workstation (0.2.1)": [
+      "mac_os_x (1.4.6)": [
+
+      ],
+      "atom (0.2.0)": [
+        [
+          "apt",
+          ">= 0.0.0"
+        ],
+        [
+          "homebrew",
+          ">= 0.0.0"
+        ]
+      ],
+      "apt (3.0.0)": [
+
+      ],
+      "workstation (0.2.2)": [
         [
           "homebrew",
           "~> 2.0.0"
@@ -169,6 +213,10 @@
         [
           "mac_os_x",
           "~> 1.4"
+        ],
+        [
+          "atom",
+          "~> 0.2.0"
         ]
       ]
     }

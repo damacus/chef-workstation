@@ -17,7 +17,6 @@ include_recipe 'homebrew::install_taps'
 include_recipe 'homebrew::install_formulas'
 
 node['workstation']['homebrew']['brews'].each do |brew|
-  # Homebrew is the default provider for mac
   package brew
 end
 
@@ -38,8 +37,6 @@ execute 'unzip_menumeters' do
   action :nothing
 end
 
-link '/opt/homebrew-cask/Caskroom/sublime-text/2.0.2/Sublime\ Text\ 2.app' do
-  to '/usr/local/bin/subl'
+node['workstation']['atom']['packages'].each do |package|
+  atom_apm package
 end
-
-include_recipe 'workstation::_tmux_setup'

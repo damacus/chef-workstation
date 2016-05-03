@@ -1,36 +1,62 @@
-default['workstation']['hostname'] = 'mbp'
+default['workstation']['hostname'] = 'dans-mbp'
 
 default['workstation']['settings']['dock']['keep'] = %W(
-  /opt/homebrew-cask/Caskroom/google-chrome/latest/Google\ Chrome.app 
-  /opt/homebrew-cask/Caskroom/sublime-text/2.0.2/Sublime\ Text\ 2.app
+  /opt/homebrew-cask/Caskroom/google-chrome/latest/Google\ Chrome.app
   /opt/homebrew-cask/Caskroom/slack/1.1.7/Slack.app
   /Applications/Utilities/Terminal.app
 )
 
-default['workstation']['homebrew']['brews'] = %W( 
-  tmux
-  axel
-  jq
+default['workstation']['homebrew']['brews'] = %W(
+  awscli
+  autoconf
+  consul-template
+  gd
+  go
+  jpeg
+  libtiff
+  p7zip
+  rbenv
+  sqlite
+  vnstat
+  awscli
+  fontconfig
+  gdbm
+  heroku-toolbelt
+  libevent
+  node
+  pkg-config
+  readline
+  terraform
+  consul
+  freetype
+  git-lfs
+  htop-osx
+  libpng
+  openssl
 )
 
 default['workstation']['homebrew']['casks'] = %W(
-  1password
   google-chrome
-  sublime-text
-  colloquy
+  atom
   slack
-  vlc
-  omnigraffle
-  backblaze
-  tunnelblick
-  wireshark
-  utorrent
   virtualbox
   vagrant
   skype
   gpgtools
   adobe-illustrator-cc
-  wireshark
   flux
   cyberduck
+  chefdk
+  filezilla
+  iterm2
+)
+
+default['workstation']['atom']['packages'] = %W(
+  cucumber
+  cucumber-autocomplete
+  cucumber-step
+  language-powershell
+  language-terraform
+  merge-conflit
+  split-diff
 )
