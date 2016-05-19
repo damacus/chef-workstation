@@ -49,6 +49,7 @@ default['workstation']['homebrew']['casks'] = %W(
   chefdk
   filezilla
   iterm2
+  google-drive
 )
 
 default['workstation']['atom']['packages'] = %W(
