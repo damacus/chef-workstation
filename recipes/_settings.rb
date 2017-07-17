@@ -6,7 +6,7 @@
 
 app_array = []
 node['workstation']['settings']['dock']['keep'].each do |app|
-	app_array << "<dict>
+  app_array << "<dict>
 			        <key>tile-data</key>
 			        <dict>
 			            <key>file-data</key>
@@ -26,19 +26,19 @@ file "#{Chef::Config[:file_cache_path]}/persistent-apps" do
   notifies :write, 'mac_os_x_userdefaults[com.apple.dock_persistent-apps]'
 end
 
-execute "killall Dock" do
+execute 'killall Dock' do
   ignore_failure true
   action :nothing
 end
 
-mac_os_x_userdefaults "com.apple.dock_persistent-apps" do
-	domain "com.apple.dock"
-	key 'persistent-apps'
-	value app_array
-	type 'array'
-	user ENV['SUDO_USER']
-	action :nothing
-	notifies :run, 'execute[killall Dock]'
+mac_os_x_userdefaults 'com.apple.dock_persistent-apps' do
+  domain 'com.apple.dock'
+  key 'persistent-apps'
+  value app_array
+  type 'array'
+  user ENV['SUDO_USER']
+  action :nothing
+  notifies :run, 'execute[killall Dock]'
 end
 
 execute 'restart_menubar' do
@@ -80,8 +80,8 @@ end
  "scutil --set LocalHostName #{node['workstation']['hostname']}",
  "scutil --set HostName #{node['workstation']['hostname']}",
  "hostname #{node['workstation']['hostname']}",
- "diskutil rename / #{node['workstation']['hostname']}" ].each do |host_cmd|
+ "diskutil rename / #{node['workstation']['hostname']}"].each do |host_cmd|
   execute host_cmd do
-  	not_if { Mixlib::ShellOut.new('hostname -f').run_command.stdout == node['workstation']['hostname'] }
+    not_if { Mixlib::ShellOut.new('hostname -f').run_command.stdout == node['workstation']['hostname'] }
   end
 end

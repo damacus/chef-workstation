@@ -1,12 +1,12 @@
 default['workstation']['hostname'] = 'dans-mbp'
 
-default['workstation']['settings']['dock']['keep'] = %W(
+default['workstation']['settings']['dock']['keep'] = %w(
   /opt/homebrew-cask/Caskroom/google-chrome/latest/Google\ Chrome.app
   /opt/homebrew-cask/Caskroom/slack/1.1.7/Slack.app
   /Applications/Utilities/Terminal.app
 )
 
-default['workstation']['homebrew']['brews'] = %W(
+default['workstation']['homebrew']['brews'] = %w(
   awscli
   autoconf
   consul-template
@@ -18,7 +18,6 @@ default['workstation']['homebrew']['brews'] = %W(
   rbenv
   sqlite
   vnstat
-  awscli
   fontconfig
   gdbm
   heroku-toolbelt
@@ -35,7 +34,7 @@ default['workstation']['homebrew']['brews'] = %W(
   openssl
 )
 
-default['workstation']['homebrew']['casks'] = %W(
+default['workstation']['homebrew']['casks'] = %w(
   google-chrome
   atom
   slack
@@ -50,9 +49,11 @@ default['workstation']['homebrew']['casks'] = %W(
   filezilla
   iterm2
   google-drive
+  docker
+  hab
 )
 
-default['workstation']['atom']['packages'] = %W(
+default['workstation']['atom']['packages'] = %w(
   cucumber
   cucumber-autocomplete
   cucumber-step
@@ -60,4 +61,13 @@ default['workstation']['atom']['packages'] = %W(
   language-terraform
   merge-conflit
   split-diff
+  base16-syntax
+  file-icons
+  language-terraform
+  language-rspec
+  linter
+  linter-js-yaml
+  linter-jsonlint
+  merge-conflicts
+  tidy-markdown
 )
