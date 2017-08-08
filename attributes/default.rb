@@ -32,6 +32,9 @@ default['workstation']['homebrew']['brews'] = %w(
   htop-osx
   libpng
   openssl
+  direnv
+  fasd
+  neovim
 )
 
 default['workstation']['homebrew']['casks'] = %w(
@@ -40,9 +43,7 @@ default['workstation']['homebrew']['casks'] = %w(
   slack
   virtualbox
   vagrant
-  skype
   gpgtools
-  adobe-illustrator-cc
   flux
   cyberduck
   chefdk
@@ -51,6 +52,7 @@ default['workstation']['homebrew']['casks'] = %w(
   google-photos-backup-and-sync
   docker
   hab
+  keybase
 )
 
 default['workstation']['atom']['packages'] = %w(
@@ -63,11 +65,14 @@ default['workstation']['atom']['packages'] = %w(
   split-diff
   base16-syntax
   file-icons
+  intentions
   language-terraform
   language-rspec
   linter
   linter-js-yaml
   linter-jsonlint
+  linter-ui-default
+  busy-signal
   merge-conflicts
   tidy-markdown
 )
