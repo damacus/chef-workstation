@@ -48,7 +48,7 @@ default['workstation']['homebrew']['casks'] = %w(
   chefdk
   filezilla
   iterm2
-  google-drive
+  google-photos-backup-and-sync
   docker
   hab
 )
