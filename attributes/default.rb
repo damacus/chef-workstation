@@ -11,11 +11,12 @@ default['workstation']['homebrew']['brews'] = %w(
   autoconf
   consul-template
   gd
+  automake
+  libyaml
   go
   jpeg
   libtiff
   p7zip
-  rbenv
   sqlite
   vnstat
   fontconfig
@@ -35,6 +36,8 @@ default['workstation']['homebrew']['brews'] = %w(
   direnv
   fasd
   neovim
+  ruby-install
+  chruby
 )
 
 default['workstation']['homebrew']['casks'] = %w(

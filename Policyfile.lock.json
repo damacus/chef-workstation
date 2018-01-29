@@ -1,5 +1,5 @@
 {
-  "revision_id": "6a6c51c1d7c9e6d318e66a334aa78c7cbf4bb8e5445f9ed64ea13c14893b4d98",
+  "revision_id": "9137ae9b49699d2d47c54c1825d987f132d6971252ef388e389a22439ef78cd8",
   "name": "workstation",
   "run_list": [
     "recipe[workstation::default]"
@@ -106,19 +106,18 @@
     },
     "workstation": {
       "version": "0.2.2",
-      "identifier": "0fd55a5e597c6c94de155d8dc1ce803bb8b26f3a",
-      "dotted_decimal_identifier": "4456708757355628.41902479898427854.140993990127418",
+      "identifier": "1e9d21f7b6e844ca9498c27f6ad44aca1be63a7b",
+      "dotted_decimal_identifier": "8617018516760644.57021329114622676.82231911922299",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "git@github.com:damacus/chef-workstation.git",
-        "revision": "cbc52bf3c10f638f96809bb7ed0f9b4c15caa94a",
+        "revision": "15f0acb4d75f2e094269216c4eb8ae1e9aba14ac",
         "working_tree_clean": false,
-        "published": true,
+        "published": false,
         "synchronized_remote_branches": [
-          "origin/HEAD -> origin/master",
-          "origin/master"
+
         ]
       },
       "source_options": {
